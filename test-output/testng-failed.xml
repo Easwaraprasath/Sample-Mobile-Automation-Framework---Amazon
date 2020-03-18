@@ -11,7 +11,7 @@
       <class name="TestScript.Amazon_TestCases">
         <methods>
           <include name="driversetUp"/>
-          <include name="tc001_LoginAndCartOperation"/>
+          <include name="tc003_CartOperation"/>
           <include name="listenerResultFlow_driverTearDown"/>
         </methods>
       </class> <!-- TestScript.Amazon_TestCases -->

@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +102,17 @@
                     <div class="method-list-content passed suite-Suite1">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="TestScript.Amazon_TestCases" hash-for-method="tc001_LoginAndCartOperation">tc001_LoginAndCartOperation</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="TestScript.Amazon_TestCases" hash-for-method="tc001_Login_negativeTC">tc001_Login_negativeTC</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="TestScript.Amazon_TestCases" hash-for-method="tc002_Login">tc002_Login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="TestScript.Amazon_TestCases" hash-for-method="tc003_CartOperation">tc003_CartOperation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite1 -->
@@ -125,9 +135,23 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="tc001_LoginAndCartOperation">
-                  </a> <!-- tc001_LoginAndCartOperation -->
-                  <span class="method-name">tc001_LoginAndCartOperation</span>
+                  <a name="tc001_Login_negativeTC">
+                  </a> <!-- tc001_Login_negativeTC -->
+                  <span class="method-name">tc001_Login_negativeTC</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc002_Login">
+                  </a> <!-- tc002_Login -->
+                  <span class="method-name">tc002_Login</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc003_CartOperation">
+                  </a> <!-- tc003_CartOperation -->
+                  <span class="method-name">tc003_CartOperation</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -190,16 +214,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'tc001_LoginAndCartOperation')
+data.setCell(0, 1, 'tc003_CartOperation')
 data.setCell(0, 2, 'TestScript.Amazon_TestCases')
-data.setCell(0, 3, 72945);
+data.setCell(0, 3, 98401);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'tc001_Login_negativeTC')
+data.setCell(1, 2, 'TestScript.Amazon_TestCases')
+data.setCell(1, 3, 25953);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'tc002_Login')
+data.setCell(2, 2, 'TestScript.Amazon_TestCases')
+data.setCell(2, 3, 24739);
 window.suiteTableData['Suite1']= { tableData: data, tableDiv: 'times-div-Suite1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Suite1">
               </div> <!-- times-div-Suite1 -->
             </div> <!-- times-div -->
@@ -231,12 +263,36 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">tc001_LoginAndCartOperation</span>
-                <span class="method-start">13069 ms</span>
+                <span class="method-name">tc001_Login_negativeTC</span>
+                <span class="method-start">14531 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">listenerResultFlow_driverTearDown([TestResult name=tc001_LoginAndCartOperation status=SUCCESS method=Amazon_TestCases.tc001_LoginAndCa...)</span>
-                <span class="method-start">86018 ms</span>
+                <span class="method-name">listenerResultFlow_driverTearDown([TestResult name=tc001_Login_negativeTC status=SUCCESS method=Amazon_TestCases.tc001_Login_negativeT...)</span>
+                <span class="method-start">40487 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">driversetUp(ce0916091a535e1605, 7.0, Android, com.amazon.mShop.android.shopping, com.amazon.mShop.splashscreen.S...)</span>
+                <span class="method-start">44790 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">tc002_Login</span>
+                <span class="method-start">57238 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">listenerResultFlow_driverTearDown([TestResult name=tc002_Login status=SUCCESS method=Amazon_TestCases.tc002_Login()[pri:1, instance:Te...)</span>
+                <span class="method-start">81979 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">driversetUp(ce0916091a535e1605, 7.0, Android, com.amazon.mShop.android.shopping, com.amazon.mShop.splashscreen.S...)</span>
+                <span class="method-start">86094 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">tc003_CartOperation</span>
+                <span class="method-start">99330 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">listenerResultFlow_driverTearDown([TestResult name=tc003_CartOperation status=SUCCESS method=Amazon_TestCases.tc003_CartOperation()[pr...)</span>
+                <span class="method-start">197732 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
