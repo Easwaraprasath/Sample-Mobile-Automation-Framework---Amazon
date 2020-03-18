@@ -25,6 +25,7 @@ import org.testng.Assert;
 
 public class HomePage extends DriverBase {
 
+    
 	protected Logger log = Logger.getLogger(HomePage.class.getName());// + ":" + nameofCurrMethod);
 	protected KeywordFunctions keys;
 	public Properties obj;
